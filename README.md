@@ -230,6 +230,6 @@ Karakteristik utama dari StatefulWidget:
     ```
     Sehingga tampilannya menjadi seperti ini:
 
-    INSERT SCREENSHOT
+    ![bonus-screenshot](https://github.com/wahyuhiddayat/medtrack-mobile/blob/main/images/bonus-7-screenshot.png)
 
 3. Ganti kode `color: Colors.indigo,` pada widget _build_ di _class_ `ShopCard` menjadi `color: item.color,` agar menggunakan warna dari tiap item. 
