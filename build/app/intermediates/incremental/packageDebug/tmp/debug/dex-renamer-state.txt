@@ -1,0 +1,4 @@
+#Tue Nov 07 16:27:26 WIB 2023
+base.0=/Users/wahyuhidayat/Documents/University/Computer Science/Semester 3/PBP (Pemrograman Berbasis Platform)/Tugas Individu/medtrack-mobile/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
