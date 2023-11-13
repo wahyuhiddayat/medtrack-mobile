@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medtrack/menu.dart';
+import 'package:medtrack/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());

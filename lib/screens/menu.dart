@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:medtrack/screens/medtrack_form.dart';
+import 'package:medtrack/widgets/left_drawer.dart';
+import 'package:medtrack/screens/medtrack_data.dart';
+import 'package:medtrack/widgets/shop_card.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
@@ -17,6 +21,8 @@ class MyHomePage extends StatelessWidget {
           'Medtrack',
         ),
       ),
+      drawer:
+          const LeftDrawer(), // Masukkan drawer sebagai parameter nilai drawer dari widget Scaffold
       body: SingleChildScrollView(
         // Widget wrapper yang dapat discroll
         child: Padding(
@@ -58,14 +64,6 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-class ShopItem {
-  final String name;
-  final IconData icon;
-  final Color color;
-
-  ShopItem(this.name, this.icon, this.color);
-}
-
 class ShopCard extends StatelessWidget {
   final ShopItem item;
 
@@ -83,6 +81,19 @@ class ShopCard extends StatelessWidget {
             ..hideCurrentSnackBar()
             ..showSnackBar(SnackBar(
                 content: Text("Kamu telah menekan tombol ${item.name}!")));
+
+          // Navigate routing
+          if (item.name == "Tambah Item") {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const ShopFormPage()));
+          }
+
+          if (item.name == "Lihat Item") {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ItemListPage(items: items)));
+          }
         },
         child: Container(
           // Container untuk menyimpan Icon dan Text
