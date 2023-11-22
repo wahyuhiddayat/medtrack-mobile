@@ -819,10 +819,8 @@ Proses ini memastikan bahwa hanya pengguna yang terverifikasi yang dapat mengaks
 13. **ScaffoldMessenger:** Digunakan untuk menampilkan SnackBar.
 
 ## <span id="tugas-9-6">Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step! (bukan hanya sekadar mengikuti tutorial)
-[x] Memastikan deployment proyek tugas Django kamu telah berjalan dengan baik.
-![memastikan-django-berjalan-lancar](URL)
 
-[x] Membuat halaman login pada proyek tugas Flutter
+### Membuat halaman login pada proyek tugas Flutter
   1. Buat file baru bernama `login.dart` di folder `screens`
   2. Isi file tersebut dengan kode ini:
     ```dart
@@ -830,7 +828,7 @@ Proses ini memastikan bahwa hanya pengguna yang terverifikasi yang dapat mengaks
     ```
   3. Modifikasi `main.dart` dengan mengubah `home: MyHomePage()` menjadi `home: LoginPage()`
 
-[x] Mengintegrasikan sistem autentikasi Django dengan proyek tugas Flutter
+### Mengintegrasikan sistem autentikasi Django dengan proyek tugas Flutter
   1. Setup autentikasi pada Django untuk flutter dengan membuat `django-app` bernama `authentication` 
     ```bash
     python3 manage.py startapp authentication
@@ -927,11 +925,11 @@ Proses ini memastikan bahwa hanya pengguna yang terverifikasi yang dapat mengaks
     }
     ```
 
-[x] Membuat model kustom sesuai dengan proyek aplikasi Django
+### Membuat model kustom sesuai dengan proyek aplikasi Django
   1. Buka _endpoint_ JSON dengan melalui `http://localhost:8000/json/` setelah itu copy data nya dan buka web __Quicktype__ lalu copy paste data dari JSOn dan juga sesuaikan beberapa hal seperti _source type_, _language_, dan _setup name_.
   2. Buat `lib/models/product.dart` laly copy paste kode yang dihasilkan oleh __Quickpoint__ tadi.
 
-  [x] Membuat halaman yang berisi daftar semua item yang terdapat pada endpoint JSON di Django yang telah kamu deploy
+### Membuat halaman yang berisi daftar semua item yang terdapat pada endpoint JSON di Django yang telah kamu deploy
   1. Instal _package_ HTTP
   2. Menambahkan potongan kode berikut di `AndroidManifest.xml` pada direktori `android`
     ```xml
@@ -1057,7 +1055,7 @@ Proses ini memastikan bahwa hanya pengguna yang terverifikasi yang dapat mengaks
             }
     ```
 
-[x] Membuat halaman detail untuk setiap item yang terdapat pada halaman daftar Item
+### Membuat halaman detail untuk setiap item yang terdapat pada halaman daftar Item
   1. Membuat file baru bernama `product_detail_page.dart` di `lib/screens`
   ```dart
   import 'package:flutter/material.dart';
